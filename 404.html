@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Page not found</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #2e2e2e;
+            color: #e0e0e0; 
+        }
+        h1 {
+            color: #ffffff;
+            border-bottom: 2px solid #ff6f61;
+            padding-bottom: 10px;
+        }
+        a {
+            color: #ff6f61;
+            text-decoration: none;
+            transition: color 0.3s, text-decoration 0.3s;
+            position: relative;
+            z-index: 1;
+        }
+        a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+        li {
+            position: relative;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #333;
+            border-radius: 4px;
+            overflow: hidden;
+            transition: background-color 0.3s;
+            color: #e0e0e0;
+            z-index: 0;
+        }
+        li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 4px;
+            background-color: #ff6f61;
+            transition: width 0.3s;
+            z-index: -1;
+        }
+        li:hover {
+            background-color: #444;
+        }
+        li:hover::before {
+            width: 100%;
+        }
+        li:hover a {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <h1>404 Page not found</h1> 
+    <li><a href="https://2qop.github.io/" target="_blank" rel="noopener noreferrer">back to the main page</a></li>
+</body>
+</html>
